@@ -6,6 +6,8 @@ The token is configured with 3% buy tax and 5% sell tax. The Flap processor allo
 
 The Vault treats delivered native BNB as prize revenue. Tax sometimes needs trades to reach Flap's liquidation threshold before `dispatch()` can pay the Vault. Payments received at or after the deadline are reserved for the next round. Anyone can settle an expired round, and the next qualified buy can settle it atomically. Unclaimed rewards remain payable across rounds. An empty window carries the prize forward and waits for a qualifying buy. The game has no fixed round count. New tax revenue lasts for the configured Flap tax period, which defaults to 30 days in the deployment script.
 
+Live demo: [fomo-launch-seven.vercel.app](https://fomo-launch-seven.vercel.app/)
+
 ## Interface
 
 The standalone UI supports English and Chinese, with a persistent language selector. Without a configured Launcher, it opens in demo mode: simulated buys, expiry, settlement and reward claims require no wallet. Demo balances are illustrative; live prize accounting depends on actual BNB delivered to the Vault.

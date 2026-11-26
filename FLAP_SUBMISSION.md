@@ -2,7 +2,7 @@
 
 FOMO Launch is a directory of independent BSC Testnet launches. Each project raises liquidity through a Flap Launcher Factory, then starts its own three-minute FOMO rounds. Qualifying buys reset the clock. The last five distinct buyers share half of the trading tax received for the round, and later rounds continue while prior winners can still claim. The remaining trading tax goes to liquidity.
 
-[Interactive demo](https://fomo-launch-bsc-testnet.qq751378834.chatgpt.site/?view=launchpad) opens the private prototype in demo mode. For judging, use the same URL with `?launcher=0x…` after registering a real Launcher and arrange judge access.
+[Interactive demo](https://fomo-launch-seven.vercel.app/?view=launchpad) opens the public prototype in demo mode. For judging, use the same URL with `?launcher=0x…` after registering a real Launcher and verify that the live project is accessible.
 
 ## Submission evidence
 

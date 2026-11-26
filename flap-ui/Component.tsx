@@ -107,7 +107,7 @@ export function Launcher({ context, messages: m, host }: Props) {
       {error && <p role="alert">{m.error}</p>}
       {receipt && <p role="status">{m[receipt.status === "pending" ? "confirming" : receipt.status]} <code>{receipt.hash}</code></p>}
       {outstanding && host?.checkReceipt && <button type="button" disabled={busy} onClick={() => void run()}>{m.check}</button>}
-      {valid && <a href={"https://fomo-launch-bsc-testnet.qq751378834.chatgpt.site/?launcher=" + launcherAddress}
+      {valid && <a href={"https://fomo-launch-seven.vercel.app/?launcher=" + launcherAddress}
         target="_blank" rel="noopener noreferrer">{m.open}</a>}
     </section>
   );
