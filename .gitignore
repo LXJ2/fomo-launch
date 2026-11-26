@@ -13,3 +13,6 @@ submission/
 artifacts/
 .env.*
 !.env.example
+
+# Vercel local project metadata
+.vercel/
