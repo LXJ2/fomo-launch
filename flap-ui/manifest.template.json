@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "kind": "launcher-ui",
+  "artifactId": "fomo-launch-testnet",
+  "name": "FOMO Launch",
+  "chainId": 97,
+  "factoryAddress": null,
+  "configContract": "launcher-detail/v1",
+  "surfaces": [
+    "launcher-ui"
+  ],
+  "entry": "Component.tsx",
+  "reads": {
+    "launched": {
+      "functionName": "launched",
+      "returns": "bool"
+    },
+    "raisedWei": {
+      "functionName": "raised",
+      "returns": "uint256"
+    },
+    "tokenAddress": {
+      "functionName": "token",
+      "returns": "address"
+    },
+    "targetWei": {
+      "functionName": "targetRaise",
+      "returns": "uint256"
+    },
+    "deadline": {
+      "functionName": "saleDeadline",
+      "returns": "uint256"
+    },
+    "contribution": {
+      "functionName": "contributions",
+      "returns": "uint256",
+      "account": true
+    },
+    "claimed": {
+      "functionName": "claimed",
+      "returns": "uint256",
+      "account": true
+    }
+  },
+  "transactions": {
+    "actions": {
+      "contribute": "payable",
+      "claim": "nonpayable",
+      "refund": "nonpayable"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+out/
+cache/
+broadcast/
+.env
+.DS_Store
+
+submission/
+
+# Local hosting configuration and generated video assets
+.openai/
+artifacts/
+.env.*
+!.env.example
